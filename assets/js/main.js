@@ -1,5 +1,4 @@
 let slideIn = document.getElementById("slideIn");
-// let closeBar = document.getElementById("closeBar");
 
 function slideMenu() {
     console.log('menu slides');
