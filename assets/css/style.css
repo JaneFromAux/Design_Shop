@@ -3,7 +3,6 @@
 /* font-family: 'Karla', sans-serif;
 Farbe: #323A45 / #848484 */
 
-
 * {
     padding: 0px;
     margin: 0px;
@@ -25,7 +24,6 @@ HEADER
 */
 header nav {
     height: 130px;
-    /* width: 99vw; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,7 +37,6 @@ header nav h1 {
 header nav h1:hover {
     color: #848484;
 }
-
 
 header nav ul {
     align-content: flex-end;
@@ -73,7 +70,6 @@ slideMenu()
 */
 header>nav>div {
     display: none;
-    /* position: */
 }
 
 header>nav>div:hover>div {
@@ -90,24 +86,58 @@ header>nav>div>div {
     margin: 3px;
 }
 
-
-/* .slide {
+header nav section {
     display: none;
-} */
-
-/* .slide {
     background: #323A45;
-    color: rgba(132, 132, 132, 0.5);
-    height: 100vh;
     width: 80%;
+    height: 100vh;
     position: absolute;
+    top: -100vh;
+    bottom: 0;
+}
+
+header nav section a {
+    text-decoration: none;
+    color: white;
     display: block;
-} */
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 15%
+}
+
+header nav section a:hover {
+    text-decoration: underline;
+}
+
+header nav section>a:nth-of-type(4) {
+    border: 1px solid white;
+    padding: 2%;
+    width: 12%;
+    text-align: center;
+    margin: 20% auto auto auto;
+}
+
+header nav section>a:nth-of-type(4):hover {
+    background: white;
+    color: #323A45;
+    text-decoration: none;
+}
+
+.slide {
+    display: block;
+    background: black;
+    color: white;
+    height: 60vh;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    bottom: 300px;
+    transition: all 0.5s;
+}
 
 /* 
 MAIN
 */
-
 /* geGRIDle */
 main>section {
     display: grid;
@@ -173,7 +203,6 @@ img:hover {
 /* 
 Bilduntertitel FLEXen
 */
-
 main>section>article>article {
     height: 3%;
     display: flex;
@@ -189,7 +218,6 @@ main>section>article>article {
 /* 
 h2 h3 h4
 */
-
 h2,
 h4 {
     font-size: 1.6rem;
@@ -309,36 +337,15 @@ footer>p {
     font-size: 1.4rem;
 }
 
+/* Media Query 576px mobile Version */
 @media only screen and (max-width:576px) {
     header nav>div {
-        /* position: relative; */
-        /* top: 0;
-        right: 200px;
-        left: -200px;
-        transition: 0.5s; */
         display: block;
     }
 
     header nav ul {
         display: none;
     }
-
-    /* header>nav>div>div {
-        display: block;
-    } */
-
-    /* header>nav>div:hover {
-        color: rgba(132, 132, 132, 0.5);
-    } */
-
-    /* .slide {
-        background: #323A45;
-        color: rgba(132, 132, 132, 0.5);
-        height: 100vh;
-        width: 80%;
-        position: absolute;
-        display: none;
-    } */
 
     main>section {
         display: grid;
@@ -351,11 +358,9 @@ footer>p {
             "arti5"
             "arti6"
             "arti7";
-
         gap: 20px;
         margin-bottom: 20px;
     }
-
 
     main>section>article>article {
         display: flex;
